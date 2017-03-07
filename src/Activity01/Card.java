@@ -1,3 +1,5 @@
+package Activity01;
+
 /**
  * Card.java
  *
@@ -8,17 +10,17 @@ public class Card {
 	/**
 	 * String value that holds the suit of the card
 	 */
-	private String suit;
+	private final String suit;
 
 	/**
 	 * String value that holds the rank of the card
 	 */
-	private String rank;
+	private final String rank;
 
 	/**
 	 * int value that holds the point value.
 	 */
-	private int pointValue;
+	private final int pointValue;
 
 
    /**
@@ -32,7 +34,9 @@ public class Card {
 	 *                  containing the point value of the card
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		this.suit = cardSuit;
+                this.rank = cardRank;
+                this.pointValue = cardPointValue;
 	}
 
 
