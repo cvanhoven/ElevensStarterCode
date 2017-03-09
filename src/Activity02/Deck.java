@@ -2,7 +2,6 @@ package Activity02;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.lang.Math;
 
 /**
  * The Deck class represents a shuffled deck of cards.
@@ -75,8 +74,8 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+	public int deal() {
+		return 0;
 	}
 
 	/**
