@@ -1,7 +1,6 @@
 package Activity02;
 
 import java.util.List;
-import java.util.ArrayList;
 
 /**
  * The Deck class represents a shuffled deck of cards.
@@ -20,7 +19,7 @@ public class Deck {
 	 * Cards are dealt from the top (highest index) down.
 	 * The next card to be dealt is at size - 1.
 	 */
-	private final int size;
+	private int size;
 
 
 	/**
@@ -74,8 +73,14 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public int deal() {
-		return 0;
+	public Card deal() {
+		if (isEmpty()) {
+			return null;
+		}
+		size--;
+		Card c = cards.get(size);
+		return c;
+	}
 	}
 
 	/**
