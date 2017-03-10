@@ -80,8 +80,7 @@ public class Deck {
 		size--;
 		Card c = cards.get(size);
 		return c;
-	}
-	}
+        }
 
 	/**
 	 * Generates and returns a string representation of this deck.
